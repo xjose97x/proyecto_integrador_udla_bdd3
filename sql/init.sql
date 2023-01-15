@@ -1,0 +1,2 @@
+CREATE DATABASE pronacastg;
+CREATE DATABASE pronacasor;
