@@ -19,7 +19,7 @@ def run(db_context):
 
     proveedores = list(riesgo_proveedores_2021.iloc[:, 0])
     riesgo_2021 = list(riesgo_proveedores_2021.iloc[:, 1])
-    with open(f'{DataProperties.DATA_PATH}/riesgo_proveedores.csv', 'w+') as csvfile:
+    with open(f'{DataProperties.DATA_PATH}/riesgo_proveedores.csv', 'w+', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['proveedor', 'year', 'riesgo'])
         for i in range(len(proveedores)):

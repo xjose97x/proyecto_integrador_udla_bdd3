@@ -15,7 +15,7 @@ def truncate(db_context):
     db_context.execute('TRUNCATE TABLE GASTOS_EXT')
 
 def run(db_context):
-    with open(f'{DataProperties.DATA_PATH}/gastos.csv', 'w+') as csvfile:
+    with open(f'{DataProperties.DATA_PATH}/gastos.csv', 'w+', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['year', 'month', 'value'])
         for i in range(2):
