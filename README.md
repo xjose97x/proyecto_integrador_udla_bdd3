@@ -20,4 +20,4 @@ Ejecutar los siguientes scripts en MySQL:
 
 
 ### Power BI
-...
+Abrir el documento `powerbi/POWER_BI..Analisis.pbix` con Power BI Desktop.
